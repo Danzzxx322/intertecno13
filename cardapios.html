@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápios</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/cardapios.js"></script>
+</head>
+<body class="cardapios">
+<header>
+  <div class="logo">
+    <img src="img/mascot.png" alt="Mascote">
+    <h1>Alimentação Saudável</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="cardapios.html" class="active">Cardápios</a></li>
+      <li><a href="nutricao.html">Nutrição</a></li>
+      <li><a href="dicas.html">Dicas</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="intro">
+    <h2>Cardápios da Semana</h2>
+    <img src="img/mascote_escrevendo.png" alt="Mascote escrevendo" class="mascote-escrevendo">
+  </section>
+
+  <section class="days">
+    <!-- Botões dos dias -->
+    <button onclick="mostrarDia('segunda')">Segunda</button>
+    <button onclick="mostrarDia('terca')">Terça</button>
+    <button onclick="mostrarDia('quarta')">Quarta</button>
+    <button onclick="mostrarDia('quinta')">Quinta</button>
+    <button onclick="mostrarDia('sexta')">Sexta</button>
+
+    <!-- Cardápios por dia -->
+    <div id="segunda" class="day-menu">
+      <h3>Segunda</h3>
+      <div class="meal">
+        <h4>Café da Manhã</h4>
+        <img src="img/segunda_cafe.jpeg" alt="Café da Manhã Segunda" class="meal-img">
+        <p>Frutas + Pão integral</p>
+      </div>
+      <div class="meal">
+        <h4>Almoço</h4>
+        <img src="img/segunda_almoco.png" alt="Almoço Segunda" class="meal-img">
+        <p>Arroz integral, Feijão, Frango grelhado, Salada</p>
+      </div>
+    </div>
+
+    <div id="terca" class="day-menu">
+      <h3>Terça</h3>
+      <div class="meal">
+        <h4>Café da Manhã</h4>
+        <img src="img/terca_cafe.jpeg" alt="Café da Manhã Terça" class="meal-img">
+        <p>Vitamina de frutas</p>
+      </div>
+      <div class="meal">
+        <h4>Almoço</h4>
+        <img src="img/terca_almoco.png" alt="Almoço Terça" class="meal-img">
+        <p>Macarrão integral, Molho de tomate, Legumes</p>
+      </div>
+    </div>
+
+    <div id="quarta" class="day-menu">
+      <h3>Quarta</h3>
+      <div class="meal">
+        <h4>Café da Manhã</h4>
+        <img src="img/quarta_cafe.jpeg" alt="Café da Manhã Quarta" class="meal-img">
+        <p>Ovos mexidos + Pão integral</p>
+      </div>
+      <div class="meal">
+        <h4>Almoço</h4>
+        <img src="img/quarta_almoco.png" alt="Almoço Quarta" class="meal-img">
+        <p>Peixe grelhado, Purê de batata, Salada</p>
+      </div>
+    </div>
+
+    <div id="quinta" class="day-menu">
+      <h3>Quinta</h3>
+      <div class="meal">
+        <h4>Café da Manhã</h4>
+        <img src="img/quinta_cafe.jpeg" alt="Café da Manhã Quinta" class="meal-img">
+        <p>Iogurte + Granola</p>
+      </div>
+      <div class="meal">
+        <h4>Almoço</h4>
+        <img src="img/quinta_almoco.png" alt="Almoço Quinta" class="meal-img">
+        <p>Arroz integral, Feijão, Carne moída, Legumes</p>
+      </div>
+    </div>
+
+    <div id="sexta" class="day-menu">
+      <h3>Sexta</h3>
+      <div class="meal">
+        <h4>Café da Manhã</h4>
+        <img src="img/sexta_cafe.jpeg" alt="Café da Manhã Sexta" class="meal-img">
+        <p>Frutas + Suco natural</p>
+      </div>
+      <div class="meal">
+        <h4>Almoço</h4>
+        <img src="img/sexta_almoco.png" alt="Almoço Sexta" class="meal-img">
+        <p>Strogonoff de frango, Arroz, Salada</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Projeto Alimentação Saudável</p>
+</footer>
+</body>
+</html>
+
+
